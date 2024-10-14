@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+ 
+    <meta charset="utf-8" />
+    <title>AI Astrology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="KargoBox-Logistic Simplified" name="description" />
+    <meta content="" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+   <!-- App favicon -->
+   <link rel="icon" type="image/png"  sizes="32x32" href="assets/images/favicon-32x32.png">
+   <link href="assets/libs/simple-datatables/style.css" rel="stylesheet" type="text/css" />
+   <link href="assets/libs/mobius1-selectr/selectr.min.css" rel="stylesheet" type="text/css" />
+   <link href="assets/libs/huebee/huebee.min.css" rel="stylesheet" type="text/css" />
+   <link href="assets/libs/vanillajs-datepicker/css/datepicker.min.css" rel="stylesheet" type="text/css" />
+   <link href="assets/libs/uppy/uppy.min.css" rel="stylesheet" type="text/css" />
+<!-- App css -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body id="body" class="enlarge-menu">
+        <!-- leftbar-tab-menu -->
+        <div class="leftbar-tab-menu">
+            <div class="main-icon-menu">
+                <a class='logo logo-metrica d-block text-center' href='index.html'>
+                    <span>
+                        <img src="assets/images//AI Astrology Logo only PNG 1.png" alt="logo-small" class="logo-sm rounded-circle btn-theme-new">
+                    </span>
+                </a>
+                <div class="main-icon-menu-body">
+                    <div class="position-reletive h-100" data-simplebar style="overflow-x: hidden;">
+                        <ul class="nav nav-tabs mt-3">
+
+                            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Customers Management" data-bs-trigger="hover">
+                                <a href="clients.html" id="dashboard-tab" class="nav-link ">
+                                    <i class="mdi mdi-account menu-icon"></i>
+                                </a><!--end nav-link-->
+                            </li><!--end nav-item-->
+                            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Astrologers Management" data-bs-trigger="hover">
+                                <a href="astrologers.html" id="uikit-tab" class="nav-link">
+                                    <img src="./assets/images/icons8-fortune-teller-1002.png" height="20" class="menu-icon" alt="">
+                                    <!-- <i class="ti ti-report-money menu-icon"></i> -->
+                                    <!-- <i class="mdi mdi-account menu-icon"></i> -->
+                                </a><!--end nav-link-->
+                            </li><!--end nav-item-->
+                            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Offer Management" data-bs-trigger="hover">
+                                <a href="promo-code.html" id="uikit-tab" class="nav-link">
+                                   
+                                    <svg xmlns="http://www.w3.org/2000/svg"  class="menu-icon"  width="24" height="24" viewBox="0 0 24 24" style="fill: white;"><path d="m20.749 12 1.104-1.908a1 1 0 0 0-.365-1.366l-1.91-1.104v-2.2a1 1 0 0 0-1-1h-2.199l-1.103-1.909a1.008 1.008 0 0 0-.607-.466.993.993 0 0 0-.759.1L12 3.251l-1.91-1.105a1 1 0 0 0-1.366.366L7.62 4.422H5.421a1 1 0 0 0-1 1v2.199l-1.91 1.104a.998.998 0 0 0-.365 1.367L3.25 12l-1.104 1.908a1.004 1.004 0 0 0 .364 1.367l1.91 1.104v2.199a1 1 0 0 0 1 1h2.2l1.104 1.91a1.01 1.01 0 0 0 .866.5c.174 0 .347-.046.501-.135l1.908-1.104 1.91 1.104a1.001 1.001 0 0 0 1.366-.365l1.103-1.91h2.199a1 1 0 0 0 1-1v-2.199l1.91-1.104a1 1 0 0 0 .365-1.367L20.749 12zM9.499 6.99a1.5 1.5 0 1 1-.001 3.001 1.5 1.5 0 0 1 .001-3.001zm.3 9.6-1.6-1.199 6-8 1.6 1.199-6 8zm4.7.4a1.5 1.5 0 1 1 .001-3.001 1.5 1.5 0 0 1-.001 3.001z"></path></svg>
+                                </a><!--end nav-link-->
+                            </li><!--end nav-item-->
+                        </ul>
+                        <ul class="nav nav-tabs mt-0" role="tablist" id="tab-menu">
+                            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Request Management" data-bs-trigger="hover">
+                                <a href="#MetricaDashboard" id="dashboard-tab" class="nav-link">
+                                    <i class="fas fa-code-branch menu-icon"></i>
+                                </a><!--end nav-link-->
+                            </li><!--end nav-item-->
+                            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Consultations Management" data-bs-trigger="hover">
+                                <a href="#MetricaApps" id="apps-tab" class="nav-link">
+                                    <i class="mdi mdi-phone-classic menu-icon"></i>
+                                </a><!--end nav-link-->
+                            </li><!--end nav-item-->
+                            
+
+                            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="AstroShop Management" data-bs-trigger="hover">
+                                <a href="#MetricaUikit" id="uikit-tab" class="nav-link">
+                                    <i class="mdi mdi-shopping menu-icon"></i>
+                                </a><!--end nav-link-->
+                            </li><!--end nav-item-->
+                            
+                            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="AstroGuides Management" data-bs-trigger="hover">
+                                <a href="#MetricaPages" id="pages-tab" class="nav-link">
+                                    <i class="mdi mdi-ship-wheel menu-icon"></i>
+                                </a><!--end nav-link-->
+                            </li><!--end nav-item-->
+                            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Reports" data-bs-trigger="hover">
+                                <a href="#reportmanagement" id="pages-tab" class="nav-link">
+                                    <i class="ti ti-files menu-icon"></i>
+                                </a><!--end nav-link-->
+                            </li><!--end nav-item-->
+
+                            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Settings" data-bs-trigger="hover">
+                                <a href="#MetricaAuthentication" id="authentication-tab" class="nav-link">
+                                    <i class="mdi mdi-settings menu-icon"></i>
+                                </a><!--end nav-link-->
+                            </li><!--end nav-item-->
+                        </ul><!--end nav-->
+                    </div><!--end /div-->
+                </div><!--end main-icon-menu-body-->
+                <div class="pro-metrica-end rounded-circle">
+                    <a href="#" class="profile">
+                        <img src="assets/images/users/user-4.jpg" alt="profile-user" class="rounded-circle thumb-sm">
+                    </a>
+                </div><!--end pro-metrica-end-->
+            </div>
+            <!--end main-icon-menu-->
+
+            <div class="main-menu-inner">
+                <!-- LOGO -->
+                
+                <div class="topbar-left">
+                    <a class='logo' class="justify-content-center w-100 d-flex" href='index.html'>
+                        <span class="justify-content-center pt-3 w-100 d-flex">
+                            <img src="assets/images/AI Astrology Logo PNG(1) 1.png" width="100" alt="logo-large" class="logo-lg logo-dark">
+                            <img src="assets/images/AI Astrology Logo PNG(1) 1.png"  alt="logo-large" class="logo-lg logo-light">
+                        </span>
+                    </a><!--end logo-->
+                </div><!--end topbar-left-->
+                <!--end topbar-left-->
+                <!--end logo-->
+                <div class="menu-body navbar-vertical tab-content" data-simplebar>
+                    <div id="MetricaDashboard" class="main-icon-menu-pane tab-pane" role="tabpanel"
+                        aria-labelledby="dasboard-tab">
+                        <div class="title-box">
+                            <h6 class="menu-title">Request Management</h6>
+                        </div>
+
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class='nav-link' href='astrologer-registration-requests.html'>Astrologers Registration Requests</a>
+                            </li><!--end nav-item-->
+                            <li class="nav-item pt-2">
+                                <a class='nav-link ' href='astrologer-kyc-request.html'>Astrologers KYC Requests</a>
+                            </li><!--end nav-item-->
+                            <li class="nav-item pt-2">
+                                <a class='nav-link ' href='withdrawal-requests.html'>Balance Withdrawal Requests</a>
+                            </li><!--end nav-item-->
+                            
+                        </ul><!--end nav-->
+                    </div><!-- end Dashboards -->
+
+                    <div id="MetricaApps" class="main-icon-menu-pane tab-pane" role="tabpanel"
+                        aria-labelledby="apps-tab">
+                        <div class="title-box">
+                            <h6 class="menu-title">Consultations Management</h6>
+                        </div>
+
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class='nav-link' href='all-consultation.html'>All Consultations</a>
+                            </li><!--end nav-item-->
+                            <li class="nav-item">
+                                <a class='nav-link' href='active-consultation.html'>Active Consultations</a>
+                            </li><!--end nav-item-->
+                           
+                        </ul><!--end nav-->
+                    </div><!-- end Crypto -->
+
+                    <div id="MetricaUikit" class="main-icon-menu-pane  tab-pane" role="tabpanel"
+                        aria-labelledby="uikit-tab">
+                        <div class="title-box">
+                            <h6 class="menu-title">AstroShop Management</h6>
+                        </div>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class='nav-link' href='category-management.html'>Category Management</a>
+                            </li><!--end nav-item-->
+                            <li class="nav-item">
+                                <a class='nav-link' href='item-management.html'>Product Management</a>
+                            </li><!--end nav-item-->
+                            <li class="nav-item">
+                                <a class='nav-link' href='shop-order.html'>Order Management</a>
+                            </li><!--end nav-item-->
+                           
+                        </ul><!--end nav-->
+                    </div><!-- end Others -->
+
+                    <div id="MetricaPages" class="main-icon-menu-pane tab-pane" role="tabpanel" aria-labelledby="pages-tab">
+                        <div class="title-box">
+                            <h6 class="menu-title">AstroGuides Management</h6>
+                        </div>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class='nav-link' href='astroguide-category.html'>Category Management</a>
+                            </li><!--end nav-item-->
+                            <li class="nav-item">
+                                <a class='nav-link' href='astroguide.html'>Guide Management</a>
+                            </li><!--end nav-item-->
+                           
+                        </ul><!--end nav-->
+                    </div><!-- end Pages -->
+
+                    <div id="reportmanagement" class="main-icon-menu-pane tab-pane" role="tabpanel"
+                        aria-labelledby="authentication-tab">
+                        <div class="title-box">
+                            <h6 class="menu-title">Reports</h6>
+                        </div>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class='nav-link' href='consultation-payment-transaction.html'>Consultations Transaction</a>
+                            </li><!--end nav-item-->
+                            <li class="nav-item pt-2">
+                                <a class='nav-link' href='shop-payment-transaction.html'>Shop Order Transaction</a>
+                            </li><!--end nav-item-->
+                            <li class="nav-item pt-2">
+                                <a class='nav-link' href='astrologer-settlement-transactions.html'>Astrologer Payouts Settlement</a>
+                            </li><!--end nav-item-->
+                            <li class="nav-item pt-1">
+                                <a class='nav-link' href='astrologer-review.html'>Astrologer Review</a>
+                            </li><!--end nav-item-->
+                           
+                        </ul><!--end nav-->
+                    </div><!-- end Authentication-->
+                    <div id="MetricaAuthentication" class="main-icon-menu-pane tab-pane" role="tabpanel"
+                        aria-labelledby="authentication-tab">
+                        <div class="title-box">
+                            <h6 class="menu-title">Settings</h6>
+                        </div>
+                        <ul class="navbar-nav">
+                           
+                            <li class="nav-item">
+                                 <a class="nav-link" href="#sidebarAnalytics" data-bs-toggle="collapse" role="button"
+                                    aria-expanded="false" aria-controls="sidebarAnalytics">
+                                    Consultations Settings
+                                </a>
+                                <div class="collapse " id="sidebarAnalytics">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item pt-1">
+                                            <a class='nav-link ' href='consultation-commission.HTML'>Commission Setting</a>
+                                        </li><!--end nav-item-->
+                                        <li class="nav-item pb-2 pt-1">
+                                            <a class='nav-link ' href='consultation-offer-charge-setting.html'>Offer Charge Setting </a>
+                                        </li><!--end nav-item-->
+                                    </ul><!--end nav-->
+                                </div><!--end sidebarAnalytics-->
+                            </li><!--end nav-item-->
+                            <li class="nav-item">
+                                <a class='nav-link' href='slider-management.html'>App Slider Management Setting</a>
+                            </li><!--end nav-item-->
+                           
+                            <li class="nav-item">
+                                <a class='nav-link' href='roles-permissions.html'>Roles & Permission</a>
+                            </li><!--end nav-item-->
+                           
+                        </ul><!--end nav-->
+                    </div><!-- end Authentication-->
+                </div>
+                <!--end menu-body-->
+            </div><!-- end main-menu-inner-->
+        </div>
+        <!-- end leftbar-tab-menu-->
+        <!-- Top Bar Start -->
+        <div class="topbar">            
+            <!-- Navbar -->
+            <nav class="navbar-custom" id="navbar-custom">    
+                <ul class="list-unstyled topbar-nav float-end mb-0">
+                    <li >
+                        <a class="nav-link dropdown-toggle arrow-none nav-icon" id="fullscreen-btn" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="false" aria-expanded="false">
+                            <i class="fas fa-expand"></i>
+                            <!-- <span class="alert-badge"></span> -->
+                        </a>
+                       
+                    </li>
+
+                   
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle nav-user" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="false" aria-expanded="false">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/images/users/user-4.jpg" alt="profile-user" class="rounded-circle me-2 thumb-sm" />
+                                <div>
+                                    <small class="d-none d-md-block font-11">Admin</small>
+                                    <span class="d-none d-md-block fw-semibold font-12">Maria Gibson <i
+                                            class="mdi mdi-chevron-down"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="admin-profile.html"><i class="ti ti-user font-16 me-1 align-text-bottom"></i> Profile</a>
+                            <a class="dropdown-item" href="change-password.html"><i class="ti ti-settings font-16 me-1 align-text-bottom"></i> Change Password</a>
+                            <div class="dropdown-divider mb-0"></div>
+                            <a class="dropdown-item" href="#"><i class="ti ti-power font-16 me-1 align-text-bottom"></i> Logout</a>
+                        </div>
+                    </li><!--end topbar-profile-->
+                      
+                </ul><!--end topbar-nav-->
+
+                <ul class="list-unstyled topbar-nav mb-0">                        
+                    <li>
+                        <button class="nav-link button-menu-mobile nav-icon" id="togglemenu">
+                            <i class="ti ti-menu-2"></i>
+                        </button>
+                    </li> 
+                    <li>
+                        <a href="index.html" class="nav-link button-menu-mobile nav-icon" id="togglemenu">
+                            <i class="ti ti-home"></i>
+                        </a>
+                    </li> 
+                    
+                                         
+                </ul>
+            </nav>
+            <!-- end navbar-->
+        </div>
+        <!-- Top Bar End -->
+        <!-- Top Bar End -->
+
+        <div class="page-wrapper">
+
+            <!-- Page Content-->
+            <div class="page-content-tab">
+
+                <div class="container-fluid">
+                    <!-- Page-Title -->
+                    <div class="row">
+                        <div class="col-md-5">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h4 class="page-title">All Consultation Panel</h4>
+                                    <p>View and manage all consultations between astrologers and clients, with detailed records.</p>
+                                </li>
+                            </ul>
+                        </div><!--end col-->
+
+                        <div class="col-md-7 text-end d-flex align-items-center justify-content-start justify-content-md-end">
+                            <div class="">
+                                <ul class="list-inline d-flex">
+                                    <li class="list-inline-item">
+                                        <div class="input-group">                                                
+                                            <input type="text" id="chat-search" name="chat-search" class="form-control" placeholder="Search">
+                                           <button type="button" class="btn btn-theme shadow-none"><i class="la la-search"></i></button>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="list-inline-item  ">
+                                        <a type="button" class="btn  btn-theme " data-bs-toggle="collapse" href="#collapseFilter" aria-expanded="true" aria-controls="collapseFilter"><i class="mdi mdi-filter-outline"></i>Filter</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>                            
+                        </div><!--end col-->
+                    </div>
+                    
+                    <div  class="row collapse " id="collapseFilter">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Filter Consultation</h4>
+                                </div><!--end card-header-->
+                                <div class="card-body">    
+                                    <form class="">
+                                        <div class="row">
+                                           
+                                            
+                                          
+                                            <div class="col-md-4 col-lg-2">
+                                                <div class="mb-3">
+                                                    <label class="mb-2">Type Consultation<span class="text-danger">*</span></label>
+                                                    <select  required name="status" class="form-select">
+                                                        <option value="default" >Select</option>
+                                                        <option value="1">Audio/Video Call</option>
+                                                        <option value="2">Chat</option>
+                                                        
+                                                    </select>
+                                                </div>
+                                            </div>
+                                          
+                                            
+                                            <div class="col-md-4 col-lg-2">
+                                                <div class="mb-3">
+                                                    <label class="mb-2">Start Date <span class="text-danger">*</span> </label>
+                                                    <input type="date" required   class="form-control" id="">
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-lg-2">
+                                                <div class="mb-3">
+                                                    <label class="mb-2">End Date <span class="text-danger">*</span></label>
+                                                    <input type="date" required   class="form-control" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-lg-2">
+                                                <div class="mb-3">
+                                                    <label class="mb-2">Topic of Concern <span class="text-danger">*</span></label>
+                                                    <select  required name="status" class="form-select">
+                                                        <option value="default" >Select</option>
+                                                        <option value="1"></option>
+                                                        <option value="2"></option>
+                                                        
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col d-flex gap-2 align-items-end">
+                                                
+                                                <div class="mb-3">
+
+                                                    <a href="#" type="submit" class="btn px-1 px-xl-5 px-xs-3 px-sm-4 btn-theme">Apply</a>
+                                                </div>
+                                                
+                                                <div class="mb-3">
+
+                                                    <a href="#" type="button" class="btn px-xl-5 px-xs-3 px-sm-4 px-1 btn-black">Reset</a>
+                                                </div>
+                                               
+                                            </div>
+                                           
+                                            
+                                           
+                                        </div>
+                                    </form>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div>
+                    </div>  
+                      
+                
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Consultation Record</h3>
+                                    <!-- <p >Detailed report of Vehicle Type Management.</p> -->
+                                </div><!--end card-header-->
+                                
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table" id="datatable_custom">
+                                            <thead class="thead bg-soft-secondary">
+                                              <tr>
+                                                <th >#</th>
+                                                <th >Client Details</th>
+                                                <th >Astrologer Details</th>
+                                                <th >Consultation Date</th>
+                                                <th >Partner Details</th>
+                                                <th>Duration</th>
+                                                <th >Type of Consultation</th>
+                                                <th >Topic of Concern</th>
+                                                <th>Status</th>
+                                                
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td><span class="fw-bold">Client Name :</span> John <br> <span class="fw-bold">Client DOB :</span> 28-05-2024 <br> <span class="fw-bold">Time of Birth :</span>29:28:00 <br> <span class="fw-bold">Place of Birth :</span> Raisen</td>
+                                                    <td><span class="fw-bold">Astrologer Name :</span> John <br> <span class="fw-bold">Astrologer DOB :</span> 28-05-2024 <br> <span class="fw-bold">(Chat/Call)Charge per minute :</span>29:28:00 <br> <span class="fw-bold">Current City :</span> Raisen</td>
+
+                                                    <td>23-07-2024</td>
+                                                    <td><span class="fw-bold">Partner Name :</span> John <br> <span class="fw-bold">Partner DOB :</span> 28-05-2024 <br> <span class="fw-bold">Time of Birth :</span>29:28:00 <br> <span class="fw-bold">Place of Birth :</span> Raisen</td>
+                                                    <td>233</td>
+                                                    <td>Call</td>
+                                                    <td></td>
+                                                   
+                                                    <td><span class="badge fs-6 badge-soft-success">Active</span></td>
+                                                   
+                                                  
+                                                     
+                                                    
+                                                </tr>
+                                                                                                                   
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+                 
+                   
+                </div><!-- container -->
+
+               
+                <!--Start Footer-->
+                <!-- Footer Start -->
+                <footer class="footer text-center text-sm-start">
+                    Copyright &copy; 2024 AI Astrology. All Rights Reserved. 
+                </footer>
+                <!-- end Footer -->                
+                <!--end footer-->
+            </div>
+            <!-- end page content -->
+        </div>
+        <!-- end page-wrapper -->
+
+        <!-- Javascript  -->  
+        <!-- vendor js -->
+        
+            
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="assets/libs/uppy/uppy.legacy.min.js"></script>
+        <script src="assets/js/pages/file-upload.init.js"></script>
+        <script src="assets/libs/mobius1-selectr/selectr.min.js"></script>
+        <script src="assets/libs/simple-datatables/umd/simple-datatables.js"></script>
+        <script src="assets/js/pages/datatable.init.js"></script>
+        <script src="assets/js/pages/forms-advanced.js"></script>
+        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+        <script src="assets/js/pages/analytics-index.init.js"></script>
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+    </body>
+    <!--end body-->
+</html>
